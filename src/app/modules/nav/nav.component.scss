@@ -22,4 +22,20 @@ header {
 }
     }
 }
-    
+.mobile {
+    display: none;
+    background: $grey;
+    img {
+        width: 60px;
+        height: 48px;
+        margin: 0 auto;
+    }
+    @media (max-width: 425px) {
+        display: flex;
+     }
+}
+.desktop {
+    @media (max-width: 425px) {
+        display: none;
+     }
+}

@@ -1,12 +1,47 @@
 <header>
-    <nav>
-        <img src="../../assets/logo.png" alt="logo">
-        <ul>
-            <li><a href="#">Osiągnięcia</a></li>
-            <li><a href="#">Przemiany</a></li>
-            <li><a href="#">O mnie</a></li>
-            <li><a href="#">Umów trening</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-    </nav>
+    <div class="desktop">
+        <nav>
+            <img src="../../assets/logo.png" alt="logo">
+            <ul>
+                <li><a href="#">Osiągnięcia</a></li>
+                <li><a href="#">Przemiany</a></li>
+                <li><a href="#">O mnie</a></li>
+                <li><a href="#">Umów trening</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
+<div class="mobile">
+    <button mat-icon-button [matMenuTriggerFor]="menu"> 
+        <!-- pass local reference of mat-menu to be opened on this click -->
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      
+      <mat-menu #menu="matMenu"> 
+        <!-- give local reference and tell this is manu by assigning 'matMenu' -->
+        <button mat-menu-item>
+          <mat-icon>emoji_events</mat-icon>
+          <span>Osiągnięcia</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>settings_accessibility</mat-icon>
+          <span>Przemiany</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>contact_support</mat-icon>
+          <span>O mnie</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>phone_in_talk</mat-icon>
+            <span>Umów trening</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>contact_mail</mat-icon>
+            <span>Kontakt</span>
+          </button>
+      </mat-menu>
+      <img src="../../assets/logo.png" alt="logo">
+</div>
+
+

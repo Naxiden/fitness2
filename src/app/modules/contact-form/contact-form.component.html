@@ -1,4 +1,4 @@
-<!-- <h2>Jeśli masz jakieś pytania bądź nie jestes zdecydowany zapraszamy do kontaktu.</h2>
+<h2>Jeśli masz jakieś pytania bądź nie jestes zdecydowany zapraszamy do kontaktu.</h2>
 <div class="container">
   <div class="form-container">
     <form [formGroup]="profileForm">
@@ -22,11 +22,11 @@
           <mat-label for="first-name">Email: </mat-label>
           <input matInput id="email" type="text" formControlName="email">
         </mat-form-field>
-        <button mat-raised-button color="primary" class="button" type="submit">Wyślij</button>
+        <button mat-raised-button color="primary" class="button" type="submit" (click)="onSubmit()">Wyślij</button>
     </form>
   </div>
   
   <div class="form-img">
     <img src="../../../assets/reception.jpg" alt="contact-us">
   </div>
-</div> -->
+</div>

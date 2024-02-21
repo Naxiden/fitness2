@@ -15,6 +15,7 @@ export class ContactFormComponent {
     email: new FormControl(''),
   });
   onSubmit() {
+    //basic function to print data from form (interview puprose)
     console.log(this.profileForm.value);
   }
 }
