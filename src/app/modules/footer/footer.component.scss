@@ -1,0 +1,24 @@
+@import "./.././../../variables.scss";
+.footer-container {
+    height: 100px;
+    background-color: $silver;
+    color: $white;
+    display: flex;
+    div {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+        mat-icon {
+            margin-right: 2rem;
+            font-size: 40px;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+}
