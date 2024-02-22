@@ -1,41 +1,50 @@
 @import "./.././../../variables.scss";
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background:$silver;
+    background: $silver;
 }
+
 header {
-    ul { 
-    display: flex;
+    ul {
+        display: flex;
+
         li {
             list-style: none;
             display: inline-block;
             padding: 0 20px;
-       a {
-        text-decoration: none;
-        color:$white;
-       }
-       a:hover {
-        color: $silver;
-       }
-}
+
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+
+            a:hover {
+                color: $silver;
+            }
+        }
     }
 }
+
 .mobile {
     display: none;
     background: $silver;
+
     img {
         width: 60px;
         height: 48px;
         margin: 0 auto;
     }
-    @media (max-width: 425px) {
+
+    @media (max-width: 420) {
         display: flex;
-     }
+    }
 }
+
 .desktop {
-    @media (max-width: 425px) {
+    @media (max-width: 420) {
         display: none;
-     }
+    }
 }
