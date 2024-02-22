@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
+import { MainSiteComponent } from './modules/main-site/main-site.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {MatMenuModule} from '@angular/material/menu';
     SecondSectionComponent,
     NavComponent,
     FooterComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    MainSiteComponent
   ],
   imports: [
     BrowserModule,
